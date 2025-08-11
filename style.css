@@ -1,0 +1,29 @@
+/* Use the Inter font family */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* A dark gray background */
+    color: #E5E7EB; /* A light gray for text */
+}
+
+/* Style for the typing animation cursor */
+.typing-cursor {
+    border-right: .15em solid #60A5FA; /* A nice blue color */
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #60A5FA; }
+}
+
+/* Simple fade-in animation for sections */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
